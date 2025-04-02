@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Átirányítás</title>
+<title>SZSZC Vásárhelyi</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-X9ESYH4DS7"></script>
 <script>
@@ -22,6 +22,12 @@ body {
   align-items: center;
   min-height: 100vh;
   margin: 0;
+}
+
+img {
+  max-width: 70%;
+  height: auto;
+  margin-bottom: 20px;
 }
 
 p {
@@ -49,6 +55,10 @@ button:hover {
   p {
     font-size: 1em;
   }
+  
+  img {
+    max-width: 60%;
+  }
 
   button {
     padding: 12px 25px;
@@ -58,10 +68,11 @@ button:hover {
 </style>
 </head>
 <body>
+<img src='szszc-vas_logo.png' alt='Iskolánk logója'>
+<p>Gratulálunk!<br />Megtaláltál egyet <br />a 30 elrejtett sétáló kavicsaink közül.</p>
+<p>Látogasd meg iskolánk honlapját is:</p>
 
-<p>Kattints a gombra az átirányításhoz:</p>
-
-<button onclick="atiranyit()">Átirányítás</button>
+<button onclick="atiranyit()">Tovább<br />a honlapra</button>
 
 <script>
 function atiranyit() {
