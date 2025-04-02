@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Átirányítás</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-X9ESYH4DS7"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-X9ESYH4DS7');
+</script>
+<style>
+body {
+  font-family: sans-serif;
+  text-align: center;
+  background-color: lightblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+p {
+  font-size: 1.2em;
+  color: darkblue;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 15px 30px;
+  font-size: 1.1em;
+  background-color: yellow;
+  color: darkblue;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: gold;
+}
+
+/* Mobil optimalizálás */
+@media (max-width: 600px) {
+  p {
+    font-size: 1em;
+  }
+
+  button {
+    padding: 12px 25px;
+    font-size: 1em;
+  }
+}
+</style>
+</head>
+<body>
+
+<p>Kattints a gombra az átirányításhoz:</p>
+
+<button onclick="atiranyit()">Átirányítás</button>
+
+<script>
+function atiranyit() {
+  gtag('event', 'gomb_megnyomas', {
+    'event_category': 'atiranyitas',
+    'event_label': 'vasarhelyi_szolmusz'
+  });
+  window.location.href = "https://vasarhelyi.szolmusz.hu";
+}
+</script>
+
+</body>
+</html>
